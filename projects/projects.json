@@ -1,5 +1,15 @@
 [
   {
+    "name": "Portifilo",
+    "desc": "Built an Expense Tracker using HTML, CSS, and JavaScript to help users track, organize, and analyze their daily expenses.",
+    "image": "portfolio-01",
+    "category": "mern",
+    "links": {
+      "view": "https://shekarportfolio007.netlify.app/",
+      "code": "https://github.com/shekar-007201/My-Portifolio"
+    }
+  },
+  {
     "name": "Expensive Tracker",
     "desc": "Built an Expense Tracker using HTML, CSS, and JavaScript to help users track, organize, and analyze their daily expenses.",
     "image": "Tracker",
