@@ -1,11 +1,11 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $('#menu').click(function () {
+    $('#menu').click(function() {
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
     });
 
-    $(window).on('scroll load', function () {
+    $(window).on('scroll load', function() {
         $('#menu').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
 
@@ -18,12 +18,11 @@ $(document).ready(function () {
 });
 
 document.addEventListener('visibilitychange',
-    function () {
+    function() {
         if (document.visibilityState === "visible") {
             document.title = "Projects | Portfolio Jigar Sable";
             $("#favicon").attr("href", "/assets/images/favicon.png");
-        }
-        else {
+        } else {
             document.title = "Come Back To Portfolio";
             $("#favicon").attr("href", "/assets/images/favhand.png");
         }
@@ -92,7 +91,7 @@ function showProjects(projects) {
     });
 
     // filter items on button click
-    $('.button-group').on('click', 'button', function () {
+    $('.button-group').on('click', 'button', function() {
         $('.button-group').find('.is-checked').removeClass('is-checked');
         $(this).addClass('is-checked');
         var filterValue = $(this).attr('data-filter');
@@ -101,24 +100,31 @@ function showProjects(projects) {
 }
 
 getProjects().then(data => {
-    showProjects(data);
-})
-// fetch projects end
+        showProjects(data);
+    })
+    // fetch projects end
 
 // Start of Tawk.to Live Chat
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function () {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-})();
+// var Tawk_API = Tawk_API || {},
+//     Tawk_LoadStart = new Date();
+// Tawk_API.onLoad = function() {
+//     Tawk_API.setAttributes({
+//         'data-position': 'left'
+//     });
+// };
+// (function() {
+//     var s1 = document.createElement("script"),
+//         s0 = document.getElementsByTagName("script")[0];
+//     s1.async = true;
+//     s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
+//     s1.charset = 'UTF-8';
+//     s1.setAttribute('crossorigin', '*');
+//     s0.parentNode.insertBefore(s1, s0);
+// })();
 // End of Tawk.to Live Chat
 
 // disable developer mode
-document.onkeydown = function (e) {
+document.onkeydown = function(e) {
     if (e.keyCode == 123) {
         return false;
     }
