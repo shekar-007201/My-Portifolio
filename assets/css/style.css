@@ -387,7 +387,7 @@ header .navbar ul li a:hover {
 
 /* hero media queries starts*/
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .home .btn {
         margin: 4rem 0;
     }
@@ -397,7 +397,7 @@ header .navbar ul li a:hover {
     .home .image img {
         width: min(70vw, 350px);
         height: min(70vw, 350px);
-        margin: 4rem auto 0 auto;
+        margin: 3rem auto 0 auto;
         display: block;
     }
     .home .content p {
