@@ -397,7 +397,7 @@ header .navbar ul li a:hover {
     .home .image img {
         width: min(70vw, 350px);
         height: min(70vw, 350px);
-        margin: 6rem auto 0 auto;
+        margin: 4rem auto 0 auto;
         display: block;
     }
     .home .content p {
